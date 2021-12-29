@@ -1,0 +1,12 @@
+syntax = "proto3";
+package panacea.aol.v2;
+
+option java_multiple_files = true;
+option go_package = "github.com/medibloc/panacea-core/x/aol/types";
+
+// Topic defines a topic type.
+message Topic {
+  string description = 1;
+  uint64 total_records = 2;
+  uint64 total_writers = 3;
+}
